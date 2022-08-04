@@ -27,7 +27,7 @@ wrapped up in a method, we can simply call that method and not care about how it
 
 ## Method Headers and Writing Methods
 
-Before we can write a method ourselves, we need to understand the method header. 
+Before we can write a method ourselves, we need to understand the method header.
 
 ![method-header](https://curriculum-content.s3.amazonaws.com/java-mod-1/method/Method-Header.png)
 
@@ -41,7 +41,7 @@ be able to have access to the method(s) we intend on creating.
 
 A method can return a value after it's done executing. In Java, we want to specify what data type is to be returned
 once the method has completed. We call this a **return type**. It may return another object, a primitive, or even
-nothing! 
+nothing!
 
 Consider the `println()` method for example. The job of the `println()` method is to write text on the console and
 once it's done performing that work, it simply returns the execution to the method that called it without returning
@@ -58,6 +58,7 @@ makes use of the `void` return type to tell us that it will not have a return va
 executing.
 
 Here are a few rules to remember about method return types:
+
 - A method must always have a return type, but that type can be `void` to specify that the method does not return
   anything.
 - A method return type can be any valid Java type, which means it can be any pre-defined Java type or
@@ -105,7 +106,7 @@ public class Bicycle {
     }
 
 }
-````
+```
 
 Now we can call the `ride()` method using the syntax dot notation again. Except this time, instead of accessing the
 attribute, we will be accessing the method. So the `Bicycle` instance will receive a message called `ride()` by
@@ -134,7 +135,7 @@ public class Bicycle {
         johnsBike.ride("Pedal faster!");
     }
 }
-````
+```
 
 We can also have the `ride()` method return a `String`.
 
@@ -152,12 +153,12 @@ public class Bicycle {
         String message = johnsBike.ride();
     }
 }
-````
+```
 
 The `return` keyword is used to return a specific value from a method. Note that the `return` keyword interrupts the
 execution of the current method and returns the specified value to the caller (i.e. the method that called this method).
 
-It's important to understand that any instruction after a `return` statement does not get executed. 
+It's important to understand that any instruction after a `return` statement does not get executed.
 For example, the following code will not compile because the code after the `return` statement can never be reached by
 the JVM and is therefore considered invalid:
 
@@ -172,7 +173,7 @@ public class Bicycle {
     }
 
 }
-````
+```
 
-Note that methods that do not return anything can still use the `return` keyword to interrupt their execution. 
+Note that methods that do not return anything can still use the `return` keyword to interrupt their execution.
 The usefulness of this feature will become more apparent once we introduce conditional statements.
